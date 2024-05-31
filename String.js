@@ -1,39 +1,67 @@
-const myname = 'Avi'
-const age = 23
 
-// console.log(myname + age + "value");
+let str = "Avinash"
+console.log(str[0]);  // index =0
 
-// console.log(`hello my name  is ${myname} an iam ${age} old`);
+// Template Litrals
 
-
-const fullname = new String (`avinashmishra`)
-
-// console.log(fullname[0]);
-// console.log(fullname.__proto__);
-
-// console.log(fullname.length);
-
-// console.log(fullname.toUpperCase());
+let SpecialString = `this is a tamplate literal`;
+console.log(SpecialString);
+console.log(typeof SpecialString);
 
 
-// console.log(fullname.charAt(1));
 
-console.log(fullname.indexOf("a"));
+let obj = {
+    item: "pen",
+    price: 10
+}
+// console.log("the cost of ",obj.item,"is" , obj.price,"rupees");
 
-const newString = fullname.substring(0,7)
-console.log(newString);
+console.log(`the cost of ${obj.item} is ${obj.price} rupees`);
 
-const ScString = fullname.slice(-9,8)
-console.log(ScString);
 
-let newStringone ="   Avinash  "
-console.log(newStringone);
-console.log(newStringone.trim());
+// escape 
+console.log("Avinash\nmishra");
+console.log("Avinash\tmishra");  
+let str1 = "Avinash\tmishra";
+console.log(str1.length);
 
-const url = "https://avinash.com/avi%2mishra"
 
-console.log(url.replace('%2','_'))
+let str2 = "Avinash";
+console.log(str2.toUpperCase());
+console.log(str2.toLocaleLowerCase());
 
-console.log(url.includes('avi'))
+let str3 = "   Avinah mishra  "
+console.log(str3.trim());
 
-console.log(fullname.split('__'));
+let str4 = "Avinah mishra"
+console.log(str4.slice(2,7));
+
+let str5 = "Avinah "
+let str6 = "Mishra"
+// let res = str5.concat(str6);
+let res=  str5+str6+str2;
+console.log(res);
+
+
+
+let str8 = "HeHello";
+// console.log(str7.replace("lo","p"));
+console.log(str8.replaceAll("He","YEllO"));
+
+let str0 ="Javascript"
+// console.log(str0.charAt(2));
+
+str0 = str0.replace("J","L")
+console.log(str0);
+
+
+// Qs1
+
+let fullName = prompt ("enter your fullname without spaces");
+let userNmae ="@"+fullName.length;
+console.log(fullName);
+
+
+
+
+
